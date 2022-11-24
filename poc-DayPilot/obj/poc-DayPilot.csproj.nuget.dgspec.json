@@ -1,20 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\31629\\Documents\\Leerjaar 2\\Periode 2\\Project\\poc-daypilot\\poc-DayPilot\\poc-DayPilot\\poc-DayPilot.csproj": {}
+    "D:\\Avans\\LJ2\\Bumbo\\Repo\\poc-daypilot\\poc-DayPilot\\poc-DayPilot.csproj": {}
   },
   "projects": {
-    "C:\\Users\\31629\\Documents\\Leerjaar 2\\Periode 2\\Project\\poc-daypilot\\poc-DayPilot\\poc-DayPilot\\poc-DayPilot.csproj": {
+    "D:\\Avans\\LJ2\\Bumbo\\Repo\\poc-daypilot\\poc-DayPilot\\poc-DayPilot.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\31629\\Documents\\Leerjaar 2\\Periode 2\\Project\\poc-daypilot\\poc-DayPilot\\poc-DayPilot\\poc-DayPilot.csproj",
+        "projectUniqueName": "D:\\Avans\\LJ2\\Bumbo\\Repo\\poc-daypilot\\poc-DayPilot\\poc-DayPilot.csproj",
         "projectName": "poc-DayPilot",
-        "projectPath": "C:\\Users\\31629\\Documents\\Leerjaar 2\\Periode 2\\Project\\poc-daypilot\\poc-DayPilot\\poc-DayPilot\\poc-DayPilot.csproj",
-        "packagesPath": "C:\\Users\\31629\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\31629\\Documents\\Leerjaar 2\\Periode 2\\Project\\poc-daypilot\\poc-DayPilot\\poc-DayPilot\\obj\\",
+        "projectPath": "D:\\Avans\\LJ2\\Bumbo\\Repo\\poc-daypilot\\poc-DayPilot\\poc-DayPilot.csproj",
+        "packagesPath": "C:\\Users\\Dylan\\.nuget\\packages\\",
+        "outputPath": "D:\\Avans\\LJ2\\Bumbo\\Repo\\poc-daypilot\\poc-DayPilot\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\31629\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Dylan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +27,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -39,6 +45,12 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "DayPilot": {
+              "target": "Package",
+              "version": "[5.0.303, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

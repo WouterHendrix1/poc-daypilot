@@ -1,26 +1,58 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "DayPilot/5.0.303": {
+        "type": "package",
+        "compile": {
+          "lib/DayPilot.dll": {}
+        },
+        "runtime": {
+          "lib/DayPilot.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "DayPilot/5.0.303": {
+      "sha512": "TpgkBj9kliqpqHR1w3uLY7XgmTccB2zZFCr/koTh3lghDUCNRB7h0xWYKz52MHJkA80pFh0CRBrG27vZN+ylvA==",
+      "type": "package",
+      "path": "daypilot/5.0.303",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "daypilot.5.0.303.nupkg.sha512",
+        "daypilot.nuspec",
+        "lib/DayPilot.dll"
+      ]
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "DayPilot >= 5.0.303"
+    ]
   },
   "packageFolders": {
-    "C:\\Users\\31629\\.nuget\\packages\\": {}
+    "C:\\Users\\Dylan\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\31629\\Documents\\Leerjaar 2\\Periode 2\\Project\\poc-daypilot\\poc-DayPilot\\poc-DayPilot\\poc-DayPilot.csproj",
+      "projectUniqueName": "D:\\Avans\\LJ2\\Bumbo\\Repo\\poc-daypilot\\poc-DayPilot\\poc-DayPilot.csproj",
       "projectName": "poc-DayPilot",
-      "projectPath": "C:\\Users\\31629\\Documents\\Leerjaar 2\\Periode 2\\Project\\poc-daypilot\\poc-DayPilot\\poc-DayPilot\\poc-DayPilot.csproj",
-      "packagesPath": "C:\\Users\\31629\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\31629\\Documents\\Leerjaar 2\\Periode 2\\Project\\poc-daypilot\\poc-DayPilot\\poc-DayPilot\\obj\\",
+      "projectPath": "D:\\Avans\\LJ2\\Bumbo\\Repo\\poc-daypilot\\poc-DayPilot\\poc-DayPilot.csproj",
+      "packagesPath": "C:\\Users\\Dylan\\.nuget\\packages\\",
+      "outputPath": "D:\\Avans\\LJ2\\Bumbo\\Repo\\poc-daypilot\\poc-DayPilot\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\31629\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Dylan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -28,6 +60,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -45,6 +78,12 @@
     "frameworks": {
       "net6.0": {
         "targetAlias": "net6.0",
+        "dependencies": {
+          "DayPilot": {
+            "target": "Package",
+            "version": "[5.0.303, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",
@@ -67,5 +106,17 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'DayPilot 5.0.303' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "DayPilot",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }
